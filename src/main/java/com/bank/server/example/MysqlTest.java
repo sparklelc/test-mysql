@@ -43,11 +43,13 @@ public class MysqlTest {
             if(i == 300){
                 updateSales.executeBatch();
                 i = 0;
+                break;
             }
 
             //updateSales.executeUpdate();
 
             //statement.executeUpdate(sql);
         }
+        System.out.println("finish");
     }
 }
